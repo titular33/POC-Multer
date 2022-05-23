@@ -12,7 +12,7 @@ function submitForm(e) {
     for(let i =0; i < files.files.length; i++) {
             formData.append("files", files.files[i]);
     }
-    fetch("http://localhost:3000/upload_files", {
+    fetch("https://poc-multer.vercel.app/upload_files", {
         method: 'POST',
         body: formData,
         headers: {
